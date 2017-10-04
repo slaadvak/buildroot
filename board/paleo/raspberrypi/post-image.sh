@@ -27,4 +27,8 @@ genimage                           \
 	--outputpath "${BINARIES_DIR}" \
 	--config "${GENIMAGE_CFG}"
 
+rm -rf ${BINARIES_DIR}/sdcard.img.zip
+zip ${BINARIES_DIR}/sdcard.img.zip ${BINARIES_DIR}/sdcard.img
+
+
 exit $?
